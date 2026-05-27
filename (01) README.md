@@ -68,7 +68,7 @@ The second half of the notebook introduces **convergence analysis**: how does or
 
 ## Step 5: `Verification_of_Keplers_Laws.ipynb`
 
-**What it does:** The capstone of the series. Using the **Velocity Verlet algorithm** — a symplectic integrator closely related to Leapfrog — the notebook runs a high-precision planetary simulation and uses it to empirically verify all three of Kepler's Laws:
+**What it does:** The capstone of the series. Using the **Velocity Verlet algorithm** (a symplectic integrator closely related to Leapfrog) the notebook runs a high-precision planetary simulation and uses it to empirically verify all three of Kepler's Laws:
 
 - **First Law** — The trajectory is confirmed to be an ellipse by computing $d_1 + d_2$ (the sum of distances from the planet to both foci) at every timestep. The standard deviation of this sum comes out near $10^{-15}$, confirming it is perfectly constant.
 
@@ -76,4 +76,4 @@ The second half of the notebook introduces **convergence analysis**: how does or
 
 - **Third Law** — The simulation computes the empirical ratio $T^2/a^3$ and compares it to Newton's theoretical prediction $4\pi^2/GM$. The relative error between the two is negligibly small, confirming the universal scaling law.
 
-**Why read it last:** It closes the loop on everything that came before. The numerical stability you built from Step 1, the physical intuition you developed in Steps 2 and 3, and the conservation guarantees you proved in Step 4 all converge here — letting you use simulation as a genuine scientific instrument to verify laws that took Kepler and Newton decades to discover.
+**Why read it last:** It closes the loop on everything that came before. The numerical stability you built from Step 1, the physical intuition you developed in Steps 2 and 3, and the conservation guarantees you proved in Step 4 all converge here, letting you use simulation as a genuine scientific instrument to verify laws that took Kepler and Newton decades to discover.
